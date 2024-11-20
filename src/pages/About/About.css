@@ -1,0 +1,6 @@
+
+@media (max-aspect-ratio: 1/1) {
+    .About-me{
+        flex-direction: column;
+    }
+}
