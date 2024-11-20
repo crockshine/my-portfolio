@@ -1,9 +1,0 @@
-.Image{
-    mask: url("/src/assets/mask.png");
-    mask-repeat: no-repeat;
-    mask-position: bottom;
-    mask-size: 165%;
-}
-.Main-title{
-    padding-bottom: 5%;
-}

@@ -82,16 +82,14 @@ export default function Skills() {
 
     return (
         <InfoBlock>
-            <span className={`flex w-full justify-center items-start font-bold text-white`}
-                  style={{fontSize: '4em'}}>Мои навыки</span>
-
-            <div className={`Skills w-full flex flex-col gap-32`}>
-
-                {skillsData.map((skill,index) =>
+            <div className={`Skills w-full flex flex-col gap-10`}>
+                <h1 className={`flex w-full justify-center items-start font-bold text-white`}
+                >Мои навыки</h1>
+                {skillsData.map((skill, index) =>
 
                     <section className={`flex flex-col w-full gap-10`}>
-                        <span className={`flex w-full justify-start items-start font-bold text-white`}
-                              style={{fontSize: '3em'}}>{skill.category}</span>
+                        <h2 className={`flex w-full justify-start items-start font-bold text-white`}
+                        >{skill.category}</h2>
 
                         <div className={`flex justify-between items-center gap-10`}>
                             <div className={`flex flex-wrap gap-5 flex-1`}>
@@ -108,43 +106,43 @@ export default function Skills() {
                     </section>
                 )}
 
-                <section className={`flex flex-col w-full gap-10`}>
-                                   <span className={`flex w-full justify-start items-start font-bold text-white`}
-                                         style={{fontSize: '3em'}}>Языки</span>
-                    <div className={`flex justify-between items-center gap-10`}>
-                        <div className={`flex flex-wrap gap-5 flex-1`}>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/html.png" alt="html"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/css.png" alt="css"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/js.png" alt="js"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/ts.png" alt="ts"/>
-                        </div>
+                {/*<section className={`flex flex-col w-full gap-10`}>*/}
+                {/*                   <span className={`flex w-full justify-start items-start font-bold text-white`}*/}
+                {/*                         style={{fontSize: '3em'}}>Языки</span>*/}
+                {/*    <div className={`flex justify-between items-center gap-10`}>*/}
+                {/*        <div className={`flex flex-wrap gap-5 flex-1`}>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/html.png" alt="html"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/css.png" alt="css"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/js.png" alt="js"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/ts.png" alt="ts"/>*/}
+                {/*        </div>*/}
 
-                        <div className={`font-light  text-white  flex-1`} style={{fontSize: '1.3em'}}>
-                            Могу создавать понятный структурированный код,
-                            с семантическими тегами, формами, мета-тегами,
-                            обработчиками отправки данных и многое другое
-                        </div>
-                    </div>
-                </section>
+                {/*        <div className={`font-light  text-white  flex-1`} style={{fontSize: '1.3em'}}>*/}
+                {/*            Могу создавать понятный структурированный код,*/}
+                {/*            с семантическими тегами, формами, мета-тегами,*/}
+                {/*            обработчиками отправки данных и многое другое*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
-                <section className={`flex flex-col w-full gap-10`}>
-                                   <span className={`flex w-full justify-start items-start font-bold text-white`}
-                                         style={{fontSize: '3em'}}>Фреймворки</span>
-                    <div className={`flex justify-between items-center gap-10`}>
-                        <div className={`flex flex-wrap gap-5 flex-1`}>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/html.png" alt="html"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/css.png" alt="css"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/js.png" alt="js"/>
-                            <img style={{transform: 'scale(0.85)'}} src="/src/assets/ts.png" alt="ts"/>
-                        </div>
+                {/*<section className={`flex flex-col w-full gap-10`}>*/}
+                {/*                   <span className={`flex w-full justify-start items-start font-bold text-white`}*/}
+                {/*                         style={{fontSize: '3em'}}>Фреймворки</span>*/}
+                {/*    <div className={`flex justify-between items-center gap-10`}>*/}
+                {/*        <div className={`flex flex-wrap gap-5 flex-1`}>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/html.png" alt="html"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/css.png" alt="css"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/js.png" alt="js"/>*/}
+                {/*            <img style={{transform: 'scale(0.85)'}} src="/src/assets/ts.png" alt="ts"/>*/}
+                {/*        </div>*/}
 
-                        <div className={`font-light  text-white  flex-1`} style={{fontSize: '1.3em'}}>
-                            Могу создавать понятный структурированный код,
-                            с семантическими тегами, формами, мета-тегами,
-                            обработчиками отправки данных и многое другое
-                        </div>
-                    </div>
-                </section>
+                {/*        <div className={`font-light  text-white  flex-1`} style={{fontSize: '1.3em'}}>*/}
+                {/*            Могу создавать понятный структурированный код,*/}
+                {/*            с семантическими тегами, формами, мета-тегами,*/}
+                {/*            обработчиками отправки данных и многое другое*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
 
             </div>

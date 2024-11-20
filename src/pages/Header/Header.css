@@ -1,3 +1,4 @@
+/*текст*/
 .text-1{
     font-size: 6vw
 }
@@ -7,6 +8,30 @@
 .Nav-text{
     font-size: 1.2vw;
     gap:5%
+}
+.Main-title{
+    padding-bottom: 5%;
+}
+
+/*все что связано с масками*/
+.Image{
+    mask: url("/src/assets/mask.png");
+    mask-repeat: no-repeat;
+    mask-position: bottom;
+    mask-size: 165%;
+}
+
+
+.Mask-block{
+    width: 55%;
+    transform: translateX(75%)
+}
+.Shape{
+    transform: translateY(-13.4%)
+}
+.Image{
+    width: 61%;
+    transform: translateX(32%) translateY(10%)
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -28,6 +53,21 @@
     }
     span{
         line-height: 1.2;
+    }
+
+    /*для маски*/
+
+    .Mask-block{
+        width: 130%;
+        transform: translateX(0%)
+    }
+    .Shape{
+        transform: translateY(-13.4%)
+    }
+
+    .Image{
+        width: 61%;
+        transform: translateX(32%) translateY(10%)
     }
 }
 

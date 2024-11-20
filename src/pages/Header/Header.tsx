@@ -2,7 +2,14 @@ import {InfoBlock} from "../../components/InfoBlock.tsx";
 import './Header.css'
 export default function Header(){
     return(
-        <InfoBlock maxHeight={1980} className={``}>
+        <InfoBlock className={``}>
+            <div className={`Mask-block absolute `}>
+                <img src="/src/assets/1.png" alt="" className={`Shape w-full absolute`}/>
+                <img src="/src/assets/я.png" alt="" className={`Image absolute`}
+                     />
+            </div>
+
+
             <div className={`Main-title w-full h-full flex flex-col justify-between  `}>
 
                 <h3 className={`Nav-text  flex justify-start font-light text-white`}>
@@ -12,7 +19,7 @@ export default function Header(){
 
                 </h3>
 
-                <h1 className={`About font-bold flex flex-col text-white`}>
+                <h1 className={`About font-bold flex flex-col text-white z-20`}>
                     <span className={`opacity-20 font-light text-2`}>Привет) Я</span>
                     <span className={`text-1`}>Михаил Королев</span>
                     <span className={`opacity-20 font-light text-2`}>Frontend разработчик</span>
@@ -20,6 +27,7 @@ export default function Header(){
                 </h1>
 
             </div>
+
         </InfoBlock>
     )
 }

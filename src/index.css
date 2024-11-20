@@ -5,3 +5,24 @@
 *{
     font-family: Unbounded, serif;
 }
+
+p{
+    font-size: 1.2em;
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+@media (max-aspect-ratio: 1/1) {
+    p{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
