@@ -1,27 +1,26 @@
-import styles from './page.module.css'
-import MainPage from "@/my_pages/MainPage/MainPage";
-import About from "@/my_pages/About/About";
-import StackPage from "@/my_pages/StackPage/StackPage";
-import ProjectPage from "@/my_pages/ProjectPage/ProjectPage";
-import React from "react";
-import Footer from "@/components/assets/Footer/Footer";
+import { AboutSection } from '@/modules/About';
+import { HeroSection } from '@/modules/Hero';
+import { ProjectsSection } from '@/modules/Projects';
+import { StackSection } from '@/modules/Stack/ui';
+import React from 'react';
+import { Footer } from '../components/ui';
+import styles from './page.module.css';
 
 export default function Home() {
-    return (
-        <>
-            <MainPage/>
-            <div className={styles.page_list}>
-                <h1>// обо мне</h1>
-                <About/>
+  return (
+    <>
+      <HeroSection />
+      <div className={styles.page_list}>
+        <h1>// обо мне</h1>
+        <AboutSection />
 
-                <h1>// я знаю</h1>
-                <StackPage/>
+        <h1>// я знаю</h1>
+        <StackSection />
 
-                <h1>// мои проекты</h1>
-                <ProjectPage/>
-
-            </div>
-            <Footer/>
-        </>
-    );
+        <h1>// мои проекты</h1>
+        <ProjectsSection />
+      </div>
+      <Footer />
+    </>
+  );
 }
