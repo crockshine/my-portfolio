@@ -6,7 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1vw;
-    max-width: 50vw;
+    max-width: 65vw;
 }
 
 @media (max-aspect-ratio:1/1) {

@@ -6,7 +6,7 @@ export const stackList: (IStack & {
 })[] = [
   {
     title: 'react',
-    imageUrl: 'react',
+    imageUrl: 'stack/react',
     description:
       'Знаком с React 19.' +
       ' Умею работать с компонентами (RSC, Client Components), состоянием (ContextApi, стейт менеджеры),' +
@@ -15,7 +15,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'next',
-    imageUrl: 'next',
+    imageUrl: 'stack/next',
     description:
       'Умею работать с app маршрутизацией, понимаю SSR, SSG, ISR.' +
       ' Освоил оптимизацию приложений (картинки, шрифты и др.), ' +
@@ -27,8 +27,28 @@ export const stackList: (IStack & {
     },
   },
   {
+    title: 'react query',
+    imageUrl: 'stack/react-query',
+    description:
+      'Проектирую слой работы с API через кастомные хуки поверх React Query хуков. ' +
+      'Поддерживаю порядок в хранении query-ключей (древовидная структура для удобной инвалидации)\n' +
+      'Умею реализовывать бесконечную пагинацию (useInfiniteQuery) с обработкой структуры данных от RC в плоский (flat) формат.\n' +
+      'Работал с кешем вручную (setQueryData) и автоматически (invalidateQueries). Реализую оптимистичный UI и обработку мутаций.',
+    shadowColor: 'rgb(255 0 0 / 0.33)',
+  },
+  {
+    title: 'socket.io',
+    imageUrl: 'stack/socket-io',
+    description:
+      'Инкапсулирую работу с WebSocket в класс с приватной логикой авто-переподключения' +
+      'Слежу за жизненным циклом подписок (off, leave) при размонтировании компонентов.' +
+      'Выношу события (on/emit) в тонкую прослойку API. Связывал сокеты ' +
+      'с кешем React Query для обработки стриминговых AI-ответов.',
+    shadowColor: 'rgb(0 0 0 / 0.33)',
+  },
+  {
     title: 'vue',
-    imageUrl: 'vue',
+    imageUrl: 'stack/vue',
     description:
       'Умею работать с vue директивами (v-bind, v-on, v-if и др.)' +
       ' Освоил передачу данных между компонентами (props, $emit). Работал со slots. ' +
@@ -37,7 +57,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'ts',
-    imageUrl: 'ts',
+    imageUrl: 'stack/ts',
     description:
       'Понимание примитивных типов, интерфейсов и типов, ' +
       'умение работать с типизацией функций и объектов, ' +
@@ -46,7 +66,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'mobx',
-    imageUrl: 'mobx',
+    imageUrl: 'stack/mobx',
     description:
       'Работал с реактивным состоянием (observable), actions и computed свойствами. ' +
       'Разделяю сторы на логичные отдельные части. Понимаю разницу между единым (глобальным) стором и локальным.',
@@ -54,21 +74,21 @@ export const stackList: (IStack & {
   },
   {
     title: 'pinia',
-    imageUrl: 'pinia',
+    imageUrl: 'stack/pinia',
     description:
       'Разделяю сторы на логичные отдельные части. Понимаю разницу между единым (глобальным) стором и локальным.',
     shadowColor: '#D2C80033',
   },
   {
     title: 'html',
-    imageUrl: 'html',
+    imageUrl: 'stack/html',
     description:
       'Знаю и использую семантические теги, различные атрибуты, теги для форм и многое другое.',
     shadowColor: '#D2580033',
   },
   {
     title: 'css',
-    imageUrl: 'css',
+    imageUrl: 'stack/css',
     description:
       'Знаю базовые стили, селекторы, псевдоклассы, псевдоэлементы. ' +
       'Умею реализовывать адаптивную верстку (flex, grid, media),' +
@@ -79,7 +99,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'tailwind',
-    imageUrl: 'tw',
+    imageUrl: 'stack/tw',
     description:
       'Занимался настройкой tw-конфига, использовал стилизацию через классы,' +
       ' реализовывал интерактивный дизайн.',
@@ -87,7 +107,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'git',
-    imageUrl: 'git',
+    imageUrl: 'stack/git',
     description:
       'Понимание концепции систем контроля версий. Знаю и использую основные команды' +
       ' (init, clone, add, commit, status, log, push, pull, remote), есть навыки работы' +
@@ -96,7 +116,7 @@ export const stackList: (IStack & {
   },
   {
     title: 'github',
-    imageUrl: 'gh',
+    imageUrl: 'stack/gh',
     description:
       'Есть опыт командной разработки, настройки репозитория, работы с Pull Request.',
     shadowColor: '#FFFFFF20',

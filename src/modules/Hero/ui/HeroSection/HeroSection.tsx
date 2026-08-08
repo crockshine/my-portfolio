@@ -1,10 +1,10 @@
 'use client';
+import { Button } from '@/components/core';
+import { MagicRings } from '@/components/ui';
+import { gsap } from 'gsap';
 import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
-import { RotateText } from '../../components/RotateText/RotateText';
 import styles from './HeroSection.module.css';
-import { gsap } from 'gsap';
-import { Button } from '@/components/core';
 
 export const HeroSection = () => {
   const nameRef = useRef<HTMLSpanElement | null>(null);
@@ -66,16 +66,7 @@ export const HeroSection = () => {
 
   return (
     <section className={styles.main_section}>
-      <div className={styles.main_info}>
-        <span ref={nameRef}>михаил королев</span>
-        <div ref={titleRef}>
-          <span>frontend</span>
-          <span>dev</span>
-        </div>
-      </div>
-
       <div className={styles.image_block}>
-        <RotateText />
         <Image
           src={'/photo.webp'}
           priority={true}
@@ -85,8 +76,40 @@ export const HeroSection = () => {
           alt={'photo'}
         />
         <div className={styles.circle} />
+        <div className={styles.background}>
+          <MagicRings
+            color="#f7f7f7"
+            colorTwo="#d8f0ff"
+            ringCount={6}
+            speed={0.5}
+            attenuation={10}
+            lineThickness={2}
+            baseRadius={0.35}
+            radiusStep={0.1}
+            scaleRate={0.1}
+            opacity={1}
+            blur={0}
+            noiseAmount={0.1}
+            rotation={0}
+            ringGap={1.5}
+            fadeIn={0.7}
+            fadeOut={0.5}
+            followMouse={false}
+            mouseInfluence={0.2}
+            hoverScale={1.05}
+            parallax={0}
+            clickBurst={false}
+          />
+        </div>
       </div>
 
+      <div className={styles.main_info}>
+        <span ref={nameRef}>Михаил Королев</span>
+        <div ref={titleRef}>
+          <span>frontend</span>
+          <span>dev</span>
+        </div>
+      </div>
       <div ref={socialRef} className={styles.social}>
         <Button variant="secondary">
           <a

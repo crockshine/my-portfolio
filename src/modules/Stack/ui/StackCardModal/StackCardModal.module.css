@@ -15,13 +15,13 @@
 .image_block{
     overflow: hidden;
     position: relative;
-    height: clamp(100%, 100%, 20vh);
-    width: 50%;
+    height: 110px;
+    width: 100px;
 }
 
 .image_block img{
-    height: clamp(100%, 100%, 20vh);
-    width: clamp(10vh, auto, auto);
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -29,18 +29,7 @@
     .dialog_content{
         width: 80vw;
     }
-
-    .image_block{
-        display: flex;
-        width: 100%;
-        min-height: 20vh;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media (max-aspect-ratio: 1/2) {
-    .image_block img{
-        height: 50%;
-    }
 }

@@ -29,24 +29,26 @@
     "react-dom": "^18.0.0",
     "react-player": "^2.16.0",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.180.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "latest",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "8.5.23",
-    "tailwindcss": "^3.4.1",
-    "@eslint/js": "^10.0.1",
-    "@types/bun": "latest",
+    "@types/three": "^0.185.4",
     "eslint": "9",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-unused-imports": "^4.4.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.7",
+    "postcss": "8.5.23",
     "prettier": "^3.8.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
     "typescript-eslint": "^8.61.0"
   },
   "lint-staged": {

@@ -1,13 +1,31 @@
-.page_list{
+.page_list {
     display: flex;
     flex-direction: column;
     gap: 5vw;
     color: white;
-    padding-left: 10vw;
-    padding-right: 10vw;
     margin-bottom: 10vw;
+    position: relative;
 }
 
-.page_list > h1{
-    opacity: .3;
+.section_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    z-index: 30;
+}
+
+.bg_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: linear-gradient(to bottom, #0f0f0f 0%, transparent 30%, transparent 70%,#0f0f0f 100%);
+}
+
+.page_list * h1 {
+    z-index: 30;
 }

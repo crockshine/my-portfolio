@@ -1,6 +1,7 @@
 .svg_block{
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .circle_text{

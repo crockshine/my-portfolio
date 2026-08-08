@@ -29,7 +29,13 @@ export const StackCardModal: FC<StackCardModalProps> = ({
         />
       </div>
       <DialogTitle>{title}</DialogTitle>
-      <DialogDescription>{description}</DialogDescription>
+      <DialogDescription asChild>
+        <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+          {description?.split('\n').map((paragraph, index) => (
+            <p key={index}>{paragraph.trim()}</p>
+          ))}
+        </div>
+      </DialogDescription>
     </div>
   );
 };

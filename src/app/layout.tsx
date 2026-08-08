@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter, Unbounded } from 'next/font/google';
 import './globals.css';
 import React from 'react';
+import { ColorBends } from '../components/ui';
 
 const unbounded = Unbounded({
   variable: '--font-unbounded-sans',
