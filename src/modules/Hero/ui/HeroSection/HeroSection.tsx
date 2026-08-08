@@ -117,7 +117,7 @@ export const HeroSection = () => {
             target={'_blank'}
             className={styles.aBlock}
           >
-            <Image src={'/gh.webp'} width={25} height={25} alt={'gh'} />
+            <Image src={'/stack/gh.webp'} width={25} height={25} alt={'gh'} />
             <h3>Github</h3>
           </a>
         </Button>
@@ -127,7 +127,7 @@ export const HeroSection = () => {
             target={'_blank'}
             className={styles.aBlock}
           >
-            <Image src={'/tg.webp'} width={25} height={25} alt={'gh'} />
+            <Image src={'/stack/tg.webp'} width={25} height={25} alt={'gh'} />
             <h3>Telegram</h3>
           </a>
         </Button>

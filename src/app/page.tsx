@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <HeroSection />
       <div className={styles.page_list}>
-        <div className={'relative'}>
+        <div className={'relative flex flex-col gap-[5vw]'}>
           <div className={styles.section_wrapper}>
             <h1>// обо мне</h1>
             <AboutSection />
